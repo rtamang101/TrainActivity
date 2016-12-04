@@ -14,13 +14,6 @@ $("#add").on("click", function() {
 	var Destination = $('#destination').val().trim();
 	var First = moment($('#First').val().trim(), "HH:mm").format("X");
 	var Frequency = $('#frequency').val().trim();
-
-	console.log(Name);
-	console.log(Destination);
-	console.log(First);
-	console.log(Frequency);
-	console.log('button clicked');
-
 	if (Name != "" && Destination != "" && First != "" && Frequency != ""){
 		database.ref().push({
 			name: Name,
